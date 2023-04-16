@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(0, 94, 55);
+    overflow: hidden;
+}
+
+.ctr {
+    margin-top: 45vh;
+    text-align: center;
+}
