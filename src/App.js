@@ -155,8 +155,6 @@ function App() {
     "Vanilla Bean Powder"
   ]
 
-  const ALL = [...HOTCOFFEE, ...HOTTEA , ...HOTDRINK, ...FRAPS, ...COLDCOFFEE, ...ICEDTEA, ...COLD]
-
   function generateCoffee() {
     let catStr = ""
     switch (cat) {
@@ -167,6 +165,7 @@ function App() {
       case 5: catStr = 'Cold Coffee'; break;
       case 6: catStr = 'Iced Tea'; break;
       case 7: catStr = 'Cold Drink'; break;
+      default: catStr = 'Error'; break;
     }
     let drink = ""
     switch (cat) {
@@ -177,6 +176,7 @@ function App() {
       case 5: drink = COLDCOFFEE[Math.floor(Math.random() * COLDCOFFEE.length)]; break;
       case 6: drink = ICEDTEA[Math.floor(Math.random() * ICEDTEA.length)]; break;
       case 7: drink = COLD[Math.floor(Math.random() * COLD.length)]; break;
+      default: drink = 'Error'; break;
     }
 
     let toppings = []
